@@ -26,7 +26,6 @@ class MyApp extends StatelessWidget {
           leading: IconButton(
             icon: Image.asset('assets/images/logo.png'),
             onPressed: () {
-              // Add onPressed functionality here
             },
           ),
           backgroundColor: Colors.orange,
@@ -35,8 +34,8 @@ class MyApp extends StatelessWidget {
               onPressed: () {},
               icon: const Icon(Icons.search),
             ),
-            Container(
-              width: 200, // Adjust the width according to your preference
+            const SizedBox(
+              width: 200,
               child: TextField(
                 decoration: InputDecoration(
                   hintText: 'Search',
@@ -46,7 +45,8 @@ class MyApp extends StatelessWidget {
 
             IconButton(
                 onPressed: () {},
-                icon: const Icon(Icons.logout))
+                icon: const Icon(Icons.logout)
+            )
           ],
         ),
 
@@ -91,37 +91,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
-// Widget _coverImage() => Stack(
-//   children: [
-//     Container(
-//       decoration: const BoxDecoration(
-//         color: Colors.white,
-//       ),
-//       child: Image.asset(
-//         'assets/images/fuji.jpg',
-//         width: double.infinity,
-//         height: 240,
-//         fit: BoxFit.fill,
-//       ),
-//     ),
-//     _profilePicture(),
-//   ],
-// );
-//
-// Widget _profilePicture() => Positioned(
-//   top: 100,
-//   left: 145,
-//   child: GestureDetector(
-//     onTap: () {
-//       // Handle button tap
-//     },
-//     child: CircleAvatar(
-//       radius: 45,
-//       backgroundImage: AssetImage('assets/images/logo.png'),
-//     ),
-//   ),
-// );
-
 
